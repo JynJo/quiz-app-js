@@ -1,0 +1,68 @@
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	font-family: 'Sans';
+}
+
+body {
+	background-color: royalblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
+h2 {
+}
+
+.card {
+	width: 40%;
+	padding: 33px;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card-header {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+/*	border-bottom: 2px solid dimgray;*/
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.question {
+	color: darkblue;
+}
+
+.choices {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.choice {
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	padding: 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.choice:hover {
+    background-color: #d4edda; /* Light green background similar to Bootstrap's success alert */
+    color: #155724; /* Dark green text color similar to Bootstrap's success alert */
+    box-shadow: 0 0 0 2px #155724; /* Creates a border-like effect using box-shadow */
+}
+
+.btn {
+	padding: 12px 33px 12px 33px;
+	border: none;
+	border-radius: 8px;
+	background-color: rgb(25, 25, 25);
+	color: white;
+	cursor: pointer;
+}
